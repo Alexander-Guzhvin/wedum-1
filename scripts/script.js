@@ -119,3 +119,30 @@ new Swiper('.special__swiper',{
     },
     
 })
+new Swiper('.purchased__swiper',{
+  navigation: {
+      nextEl: '.special-button-next',
+      prevEl: '.special-button-prev'
+  },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+  },
+  
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  breakpoints: {
+      360: {
+          slidesPerView: 'auto',
+      },
+      505: {
+          slidesPerView: 2,
+          
+      },
+      767:{
+          slidesPerView: 3,
+          
+      }
+  },
+  
+})

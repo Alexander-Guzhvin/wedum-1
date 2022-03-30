@@ -100,7 +100,11 @@ body{
 }
 
 
-
+.purchased__swiper{
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 .item-purchased{
     margin-top: 30px;
     width: 236px;
@@ -829,6 +833,9 @@ width: 64%;
     .info-popup__img-mob{
         display: none;
     }
+    .popup__form-mob{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
@@ -849,22 +856,31 @@ width: 64%;
     .item-purchased{
         margin-top: 20px;
     }
+    .purchased__swiper{
+        padding: 0;
+        margin-right: -35px;
+    }
 
+    .swiper-slide:last-child{
+        width: 86%;
+    }
 
     .special__title{
         font-size: 30px;
         margin-top: 70px;
+        width: 310px;
     }
     .special__title img{
         position: absolute;
         width: 84px;
         right: 0;
-        top: -46px;
+        top: -42px;
     }
     .special__subtitle{
         font-size: 22px;
         line-height: 31px;
         margin-top: 20px;
+        width: 260px;
     }
     .special__text{
         font-size: 16px;
@@ -879,8 +895,11 @@ width: 64%;
     }
     .special__swiper{
         padding: 0;
-        margin-right: -50px;
+        margin-right: -35px;
     }
+
+
+
     .attention{
         margin-top: 15px;
         
@@ -921,8 +940,17 @@ width: 64%;
 
 
 
+    .popup__form-img{
+        display: none;
+    }
+
+
+
+
+
+
     .popup__body{
-        width: 340px;
+        width: 360px;
         margin: 0 auto;
     }
 
@@ -987,6 +1015,9 @@ width: 64%;
     .friend__logo{
         top: 14px;
     }
+
+
+ 
 }
 
 
