@@ -1032,11 +1032,13 @@ width: 64%;
 
 
     .form-donate__error{
-        margin-top: 0px;
+        margin-top: 10px;
         margin-left: 10px;
     }
 
-
+    .donate{
+        margin-bottom: 10px;
+    }
 
 
 

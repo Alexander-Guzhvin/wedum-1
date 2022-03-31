@@ -947,7 +947,9 @@ width: 64%;
 
 
 
-
+    .donate{
+        margin-bottom: 25px;
+    }
 
     .popup__body{
         width: 360px;
