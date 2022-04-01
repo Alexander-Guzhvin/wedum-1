@@ -739,6 +739,8 @@ width: 64%;
     transition: all 0.3s;
     margin-top: 10px;
     display: block;
+    width: 170px;
+    margin: 10px auto 0;
 }
 .friend__link:hover{
     color: #972cc8;
