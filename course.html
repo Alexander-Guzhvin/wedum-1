@@ -1352,7 +1352,7 @@
                 </div>
                 <div class="course__share-url">
                   <form action="#popup">
-                  <button class="button button-alt course__share-url__copy_btn">Подарить курс</button>
+                  <button class="prize__button button button-alt">Подарить курс</button>
                   </form>
                 </div>
               </div>
@@ -3327,12 +3327,28 @@
             
         </div>
         <div class="popup__table"> 
-           <div class="popup__form-img">
-            <img src="img/form.jpg" alt=""> 
-           </div>
-           <div class="popup__form-mob">
-            <img src="img/form-mob.jpg" alt=""> 
-           </div>
+          <form class="popup--form support__form">
+            <div class="form_input">
+              <input type="text" placeholder="Имя получателя">
+            </div>
+            <div class="form_input">
+              <input type="text" placeholder="Эл.почта получателя">
+            </div>
+            <div class="form_input popup-date">
+              <input type="text" placeholder="Когда отправить этот подарок">
+            </div>
+            <div class="form_input popup-name">
+              <input type="text" placeholder="Имя отправителя">
+            </div>
+            <div class="form_input">
+              <textarea placeholder="Ваше сообщение (по желанию)"></textarea>
+            </div>
+            <label class="form_consent">
+              <input type="checkbox" class="cart__itm-checkbox" checked="">
+              <span>Я согласен на обработку моих персональных данных</span>
+            </label>
+            <button class="button button-alt" type="submit">Отправить сообщение</button>
+          </form>
       </div>
         <div class="popup__table">
           <div class="item-popup purchased__item item-purchased">
