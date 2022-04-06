@@ -2186,7 +2186,11 @@ color: #B6B6B6;
 }
 }
 
-
+@media(min-width:767px){
+    .home-ref-mob{
+        display: none;
+    }
+}
 @media(max-width:768px){
 .home-referal{
     background: none;
