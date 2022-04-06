@@ -1427,8 +1427,7 @@ color: #B6B6B6;
     }
     .why-about__subtitle{   
         margin-top: 20px;
-        font-size: 14px;
-        line-height: 20px;
+
     }
     .why-about__info{
         flex-direction: column-reverse;
@@ -1447,7 +1446,6 @@ color: #B6B6B6;
     }
     .why-about__list ul li{
         padding-left: 22px;
-        font-size: 14px;
     }
 
 
@@ -1590,13 +1588,24 @@ color: #B6B6B6;
         margin-right: -40px;
     }
 }
+.ref-title{
+    display: flex;
+    column-gap: 29px;
+    align-items: center;
+}
+@media(max-width:768px){
+    .calculate-referal__title img{
+        display: none;
+    }
+}
+
 /*home*/
 .home-referal{
     background: url(../img/referal-home.jpg) 99% no-repeat;
     height: 640px;
 }
 .home-referal__body{
-    padding-top: 64px;
+    padding-top: 44px;
     width: 500px;
     max-width: 100%;
 }
@@ -1622,6 +1631,7 @@ color: #B6B6B6;
     background: #A43FD4;
     padding: 15px 63px;
 }
+
 
 
 
@@ -1795,6 +1805,7 @@ color: #B6B6B6;
 
 .calculate-referal__form input{
     margin-top: 10px;
+    height: 60px;
 }
 .calculate-referal__price{
     width: 208px;
@@ -1853,8 +1864,9 @@ color: #B6B6B6;
 
 /*must-referal*/
 .must-referal{
-    margin-top: 60px;
+    margin-top: 90px;
 }
+
 .must-referal__content{
     display: flex;
     
@@ -1865,6 +1877,11 @@ color: #B6B6B6;
     display: flex;
     column-gap: 20px;
 }
+.must-referal__info{
+    width: 500px;
+    max-width: 100%;
+}
+
 .must-referal__text{
     font-weight: 500;
     font-size: 18px;
@@ -1877,8 +1894,7 @@ color: #B6B6B6;
     font-size: 16px;
     line-height: 21px;
     color: #252525;
-    width: 500px;
-    max-width: 100%;
+
     margin-top: 15px;
 }
 .must-referal__subtext li:last-child{
@@ -1928,6 +1944,7 @@ color: #B6B6B6;
     border-radius: 10px;
     position: relative;
     padding: 30px 30px 45px;
+    margin-top: 30px;
 }
 .program-referal__text{
     font-weight: 700;
@@ -2010,6 +2027,9 @@ color: #B6B6B6;
     line-height: 23px;
     color: #000000;
     margin-top: 20px;
+    margin-left: 130px;
+    width: 423px;
+    max-width: 100%;
 }
 .earnings-referal__content{
     margin-top: 10px;
@@ -2047,4 +2067,277 @@ color: #B6B6B6;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+
+
+
+
+
+
+.before-footer{
+    background: #E3DAFF;
+    padding: 60px 0;
+}
+.before-footer__container{
+    position: relative;
+}
+.before-footer__list{
+    margin-right: -40px;
+    margin-top: 10px;
+    width: 939px;
+    max-width: 100%;
+}
+.before-footer__item{
+    padding-bottom: 20px;
+}
+.before-footer__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #A43FD4;
+    margin-top: 40px;
+}
+.before-footer__img{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.ref-footer{
+    margin-top: 0;
+}
+
+
+
+
+@media(max-width:1200px){
+    .steps-referal__content{
+        flex-direction: column;
+    }
+    .register-steps__content{
+        width: 392px;
+        max-width: 100%;
+    }
+    .click-steps{
+        margin-top: 40px;
+    }
+    .cashback-steps{
+        margin-top: 40px;
+    }
+
+
+
+
+    .calculate-referal__form{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .calculate-referal__contet{
+        width: 392px;
+        max-width: 100%;
+    }
+    .calculate-referal__price, 
+    .calculate-referal__income,
+    .calculate-referal__courses,
+    .calculate-referal__users,
+    .calculate-referal__your-income{
+        width: 100%;
+    }
+
+
+
+    .promotion-referal__content{
+        flex-wrap: wrap;
+    }
+
+
+    .program-referal__img{
+        display: none;
+    }
+}
+
+@media(max-width:992px){
+.must-referal__content{
+    flex-direction: column;
+    row-gap: 30px;
+}
+.must-referal__item{
+    flex-direction: column;
+}
+.must-referal__text{
+    margin-top: 15px;
+}
+
+
+.promotion-referal__content{
+    row-gap: 20px;
+}
+
+
+.trust-referal__content{
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+
+.earnings-referal__item{
+    padding: 20px;
+}
+}
+
+
+@media(max-width:768px){
+.home-referal{
+    background: none;
+    height: auto;
+}
+.home-ref-mob{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.home-ref-mob img{
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.home-referal__img{
+    display: none;
+}
+.home-referal__body{
+    padding-top: 17px;
+}
+.home-referal__button{
+    width: 100%;
+}
+.home-referal__text{
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+.register-steps__content{
+    width: 320px;
+}
+.register-steps__form{
+    width: 280px;
+}
+.click-steps__content{
+    max-width: 100%;
+}
+.click-steps__woman{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.click-steps__woman img{
+    height: 330px;
+    margin-left: 15px;
+}
+.click-steps__twenty{
+    right: 0px;
+    top: 50px;
+    font-size: 100px;
+}
+.click-steps__content{
+    width: 320px;
+}
+.cashback-steps__content{
+    height: auto;
+}
+.cashback-steps__img img{
+    width: 340px;
+    margin-top: 20px;
+}
+
+
+
+.calculate-referal__form{
+    margin-top: 20px;
+}
+
+
+
+.start-referal__item{
+    width: auto;
+}
+.must-referal__img img{
+    height: 40px;
+}
+
+.promotion-referal__item{
+    width: auto;
+}
+.program-referal__info{
+    flex-direction: column;
+}
+.program-referal__subtext{
+    margin-top: 10px;
+}
+.program-referal__img{
+    display: block;
+}
+.promotion-referal__img img{
+    height: 40px;
+}
+.program-referal__content{
+    padding-bottom: 320px;
+}
+.program-referal__list ul li{
+    font-size: 16px;
+    line-height: 21px;
+}
+.program-referal__subtext{
+    margin-top: 15px;
+}
+.program-referal__subtext ul li{
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+
+.trust-referal__item {
+    padding: 10px;
+    width: 160px;
+}
+.trust-referal__img img{
+    height: 40px;
+}
+
+
+
+
+
+.earnings-referal__title{
+    display: block;
+}
+.earnings-referal__title img{
+    margin-bottom: 20px;
+}
+.earnings-referal__subtitle{
+    margin-left: 0;
+}
+.earnings-referal__content{
+    flex-direction: column;
+    row-gap: 10px;
+}
+.earnings-referal__item{
+    width: 320px;
+}
+
+
+.before-footer__img img{
+    height: 64px;
+}
+.before-footer__img{
+    bottom: -26px;
+    right: 20px;
+}
+.before-footer__text{
+    font-size: 20px;
+line-height: 26px;
+}
 }
