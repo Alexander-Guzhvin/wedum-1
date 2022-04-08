@@ -2985,6 +2985,12 @@ background: #AFA1FF;
         position: relative;
     }
 }
+
+@media(min-width: 576px){
+    .home-mob-authors{
+        display: none;
+    }
+}
 @media(max-width: 575px){
     .home-authors{
         display: none;
