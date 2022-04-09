@@ -655,14 +655,7 @@ padding-bottom: 14px;
 width: 64%;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 0px;
-}
-.swiper-pagination-bullet{
-    background-color: #972cc8;
-    width: 7px;
-    height: 7px;
-}
+
 
 
 
@@ -1527,9 +1520,7 @@ color: #B6B6B6;
 
 /*course-----------------------------------------*/
 .course__info-sale{color: #C60000;}
-.course__share-header{
-    padding-left: 37px;
-}
+
 .prize__title{
     height: 40px;
     display: flex;
@@ -2375,7 +2366,14 @@ color: #B6B6B6;
     font-size: 20px;
 line-height: 26px;
 }
+
+
+.start-referal__icon::after{
+    right: 70px;
 }
+}
+
+
 
 
 
@@ -2850,10 +2848,10 @@ background: #AFA1FF;
 .competitors-authors__text{
     font-weight: 500;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 25px;
     color: #252525;
     position: relative;
-    height: 24px;
+
     padding-top: 3px;
 }
 .competitors-authors__text::before{
@@ -3089,9 +3087,7 @@ background: #AFA1FF;
         border-top-right-radius: 0px;
         border-top-left-radius: 10px;
     }
-    .competitors-authors__text{
-        white-space: nowrap;
-    }
+
 
 
     .become-authors{
@@ -3106,4 +3102,184 @@ background: #AFA1FF;
     .steps-authors__content{
         column-gap: 20px;
     }
+
+
+    .success-authors__button{
+        width: 100%;
+    }
+    .become-authors__button{
+        width: 100%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trophy__content{
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+.trophy__body{
+    padding: 40px;
+}
+.trophy__sublogo{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B6B5B5;
+    margin-top: 10px;
+}
+.trophy__item{
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid #A43FD4 ;
+}
+.trophy__item:first-child{
+    padding-bottom: 10px;
+}
+
+
+.trophy__name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 40px;
+}
+.trophy__img{
+    margin-top: 25px;
+
+}
+.trophy__img img{
+    display: block;
+    margin: 0 auto;
+}
+.trophy__subname{
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+}
+.trophy__course{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+    margin-top: 15px;
+}
+.trophy__course span{
+    color: #A43FD4;
+}
+.trophy__info{
+    margin-top: 30px;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+    padding: 0 40px;
+}
+
+.trophy__info::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 28px;
+    height: 21px;
+    background: url('../img/quote-left.svg') center no-repeat;
+}
+.trophy__info::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    width: 28px;
+    height: 21px;
+    background: url('../img/quote-right.svg') center no-repeat;
+}
+.trophy__author{
+    margin-top: 30px;
+}
+.trophy__button{
+    margin-top: 30px;
+    background: none;
+    width: 236px;
+    border: 2px solid #A43FD4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #A43FD4;
+    padding: 16px 16px;
+}
+.trophy__subbutton{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+}
+.trophy__subbutton a{
+    color: #A43FD4;
+}
+.trophy__login{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+}
+.trophy__login span{
+    color: #A43FD4;
+}
+.trophy__parol{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+}
+.trophy__parol span{
+    color: #A43FD4;
+}
+.trophy__command{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    color: #252525;
+}
+.trophy__command span{
+    color: #A43FD4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
