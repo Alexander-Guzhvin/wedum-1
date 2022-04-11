@@ -1592,7 +1592,7 @@ color: #B6B6B6;
 
 /*home*/
 .home-referal{
-    background: url(../img/referal-home.jpg) 99% no-repeat;
+    background: url(../img/referal-home.png)  80% no-repeat;
     height: 640px;
 }
 .home-referal__body{
@@ -1817,6 +1817,11 @@ color: #B6B6B6;
     margin-top: 10px;
     height: 60px;
 }
+.calculate-referal__form input{  
+    
+    font-size: 18px;
+    color: #252525;
+}
 .calculate-referal__price{
     width: 208px;
 }
@@ -1832,6 +1837,10 @@ color: #B6B6B6;
 .calculate-referal__your-income{
     width: 295px;
 }
+
+
+
+
 .calculate-referal div{}
 
 
@@ -1852,7 +1861,7 @@ color: #B6B6B6;
 .start-referal__item{
     display: flex;
     column-gap: 10px;
-    width: 261px;
+    width: 265px;
 }
 .start-referal__text{ 
     font-weight: 500;
@@ -1944,6 +1953,7 @@ color: #B6B6B6;
     font-size: 17.5px;
     line-height: 23px;
     color: #252525;
+    height: 40px;
 }
 .promotion-referal__subtext{
     margin-top: 10px;
@@ -2119,6 +2129,7 @@ color: #B6B6B6;
     text-decoration-line: underline;
     color: #A43FD4;
     margin-top: 40px;
+    cursor: pointer;
 }
 .before-footer__img{
     position: absolute;
@@ -2242,6 +2253,8 @@ color: #B6B6B6;
 }
 
 
+
+
 .register-steps__content{
     width: 320px;
 }
@@ -2274,7 +2287,7 @@ color: #B6B6B6;
     height: auto;
 }
 .cashback-steps__img img{
-    width: 340px;
+    width: 320px;
     margin-top: 20px;
 }
 
@@ -2286,8 +2299,17 @@ color: #B6B6B6;
 
 
 
+.promotion-referal__text{
+    height: auto;
+}
+
+
+
 .start-referal__item{
     width: auto;
+}
+.must-referal{
+    margin-top: 60px;
 }
 .must-referal__img img{
     height: 40px;
@@ -2611,6 +2633,9 @@ background: #AFA1FF;
     color: #252525;
     margin-top: 10px;
 }
+.options-table__subtext ul li:last-child{
+    margin-top: 10px;
+}
 .options-table__list{
     font-weight: 400;
     font-size: 18px;
@@ -2900,6 +2925,21 @@ background: #AFA1FF;
     margin-top: -40px;
 }
 
+
+
+.options-authors__mobmicro-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6B6B6;
+    opacity: 0.7;
+    text-align: center;
+}
+@media(min-width: 991px){
+    .options-authors__mobmicro-text{
+        display: none;
+    }
+}
 @media(max-width: 991px){
     .home-authors__list{
         display: none;
@@ -2952,6 +2992,7 @@ background: #AFA1FF;
         font-size: 16px;
         font-weight: 400;
         line-height: 21px;
+        padding: 0 20px;
     }
     .create-authors__item{
         font-size: 16px;
@@ -3273,6 +3314,15 @@ background: #AFA1FF;
 }
 
 
+
+
+
+#div1{
+    display: none;
+  }
+.before-footer__hidden{
+    margin-top: 20px;
+}
 
 
 

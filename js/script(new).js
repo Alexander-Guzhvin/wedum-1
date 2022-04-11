@@ -146,3 +146,15 @@ new Swiper('.purchased__swiper',{
   },
   
 })
+
+
+
+
+
+
+
+
+function viewDiv(){
+    document.getElementById("div1").style.display = "block";
+    document.getElementById("link1").style.display = "none";
+  };
