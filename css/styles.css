@@ -1277,9 +1277,9 @@ width: 64%;
 
 .work_wedum-about__links a {
     color: #A43FD4;
-    border-bottom: 1px solid #A43FD4;
     line-height: 1;
     display: inline-block;
+    text-decoration-line: underline;
 }
 .work_wedum-about__links a:last-child {
     margin-top: 15px;
