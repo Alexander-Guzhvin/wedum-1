@@ -2267,13 +2267,12 @@ color: #B6B6B6;
 .click-steps__woman{
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+
 }
 .click-steps__woman img{
-    height: 330px;
+    height: 350px;
     margin-left: 15px;
+    
 }
 .click-steps__twenty{
     right: 0px;
