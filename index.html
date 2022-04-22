@@ -3,11 +3,13 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Главная</title>
+  <title>Статья</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="description">
-  <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
-  
+
+  <link rel="stylesheet" href="css/course-home.css" type="text/css" media="all">
+
+
  <!--  <link rel="stylesheet" href="css/styles-max-width576px.css" type="text/css" media="(max-width: 576px)">
   <link rel="stylesheet" href="css/styles-max-width767px.css" type="text/css" media="(max-width: 767px)">
   <link rel="stylesheet" href="css/styles-max-height576px.css" type="text/css" media="(max-height: 768px)">
@@ -24,7 +26,7 @@
 
 </head>
 
-<body class="home-page">
+<body class="">
 
 <div id="page-wrap">
 
@@ -36,78 +38,56 @@
   </div>
 </div>
 <div class="header_placeholder">
-<header class="header">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col d-lg-none">
-        <button class="header__menu_btn toggle-handler" data-toggle-target="#mob_menu--nav" aria-label="Меню">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div class="col-lg-2 col-auto">
-        <a href="/" class="header__logo"><img src="img/logo.svg" alt="" width="116" height="21"></a>
-      </div>
-      <div class="col-lg-5 col header__search">
-        <button class="header__search-toggle_btn d-lg-none toggle-handler" data-toggle-target=".header__search-form">
-          <img src="img/search-ico-reverce.svg" alt="" width="24" height="24">
-        </button>
-        <form class="header__search-form">
-          <input type="text" class="header__search-input" placeholder="Поиск по курсам">
-          <button class="header__search-submit" aria-label="Поиск по курсам"><img src="img/search-ico.svg" alt=""></button>
-          <button type="button" class="header__search-close toggle-handler" aria-label="Закрыть"  data-toggle-target=".header__search-form"></button>
-        </form>
-        <button class="header__acount_menu_btn toggle-handler" data-toggle-target="#mob_menu--account">
-        </button>
-      </div>
-      <div class="col header__shortlinks">
-        <a href="#" class="header__shortlinks-itm">
-          <img src="img/cart.svg" alt="" width="24" height="24">
-          <span class="badge">1</span>
-        </a>
-        <a href="#" class="header__shortlinks-itm">
-          <img src="img/fav.svg" alt="" width="24" height="24">
-        </a>
-        <a href="#" class="header__shortlinks-itm">
-          <img src="img/chart-bar.svg" alt="" width="24" height="24">
-        </a>
-        <a href="#" class="header__shortlinks-itm">
-          <img src="img/notification.svg" alt="" width="24" height="24">
-        </a>
-        <div class="header__user">
-          <a href="#" class="header__user-ava">ИФ</a>
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col d-lg-none">
+          <button class="header__menu_btn toggle-handler" data-toggle-target="#mob_menu--nav" aria-label="Меню">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
         </div>
-        <a href="#" class="button header__auth_btn">Войти</a>
-      </div>
-    </div>
-    <div class="row align-items-center header__bot">
-      <div class="col-3">
-        <div class="header__catalog">
-      		<button class="header__catalog_btn">Каталог курсов</button>
+        <div class="col-lg-2 col-auto">
+          <a href="/" class="header__logo"><img src="img/logo.svg" alt="" width="116" height="21"></a>
         </div>
-    	</div>
-    	<div class="col">
-    		<nav class="header__nav">
-    			<ul>
-    				<li><a href="#">Эксперты</a></li>
-    				<li><a href="#">Онлайн-школы</a></li>
-    				<li><a href="#" class="active">Курсы по 999</a></li>
-            <li><a href="#">Все по 149</a></li>
-            <li><a href="#">Статьи</a></li>
-    				<li><a href="#">Авторам</a></li>
-    			</ul>
-    		</nav>
-    	</div>
-    </div>
-  </div>
-</header>
-</div>
-<section class="home_intro">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-3 col-4 d-none d-lg-block">
-        <div class="home_intro__sidebar">
-          <div class="home_intro__catalog">
-            <ul>
+        <div class="col-lg-5 col header__search">
+          <button class="header__search-toggle_btn d-lg-none toggle-handler" data-toggle-target=".header__search-form">
+            <img src="img/search-ico-reverce.svg" alt="" width="24" height="24">
+          </button>
+          <form class="header__search-form">
+            <input type="text" class="header__search-input" placeholder="Поиск по курсам">
+            <button class="header__search-submit" aria-label="Поиск по курсам"><img src="img/search-ico.svg" alt=""></button>
+            <button type="button" class="header__search-close toggle-handler" aria-label="Закрыть"  data-toggle-target=".header__search-form"></button>
+          </form>
+          <button class="header__acount_menu_btn toggle-handler" data-toggle-target="#mob_menu--account">
+          </button>
+        </div>
+        <div class="col header__shortlinks">
+          <a href="#" class="header__shortlinks-itm">
+            <img src="img/cart.svg" alt="" width="24" height="24">
+            <span class="badge">1</span>
+          </a>
+          <a href="#" class="header__shortlinks-itm">
+            <img src="img/fav.svg" alt="" width="24" height="24">
+          </a>
+          <a href="#" class="header__shortlinks-itm">
+            <img src="img/chart-bar.svg" alt="" width="24" height="24">
+          </a>
+          <a href="#" class="header__shortlinks-itm">
+            <img src="img/notification.svg" alt="" width="24" height="24">
+          </a>
+          <div class="header__user">
+            <a href="#" class="header__user-ava">ИФ</a>
+          </div>
+          <a href="#" class="button header__auth_btn">Войти</a>
+        </div>
+      </div>
+      <div class="row align-items-center header__bot">
+        <div class="col-3">
+          <div class="header__catalog">
+        		<button class="header__catalog_btn">Каталог курсов</button>
+            <div class="header__catalog_list">
+              <div class="home_intro__catalog">
+                <ul>
   <li class="has-submenu"><a href="#">Здоровье</a>
     <ul>
       <li class="has-submenu">
@@ -1261,64 +1241,120 @@
     </ul>
   </li>
 </ul>
-          </div>
-          <a href="#" class="button">Опубликовать курс</a>
-        </div>
-      </div>
-      <div class="col-xl-9 col-lg-8 col-12">
-        <div class="home_promo">
-          <div class="home_promo__left">
-            <div class="home_promo__slider home_promo__slider-js">
-              <div class="home_promo__slider-list">
-                <div class="home_promo__slide home_promo__slide--with_img">
-                  <h1 class="home_promo__slide-title">Онлайн-курсы</h1>
-                  <div class="home_promo__slide-subtitle">меняющие жизнь <br>к&nbsp;лучшему!</div>
-                  <a href="#" class="button button-bordered">Начать учиться</a>
-                  <div class="home_promo__slide-img"><img src="img/home_promo-img-3.png" alt=""></div>
-                </div>
-                <div class="home_promo__slide home_promo__slide--with_img">
-                  <div class="home_promo__slide-title">Онлайн-курсы</div>
-                  <div class="home_promo__slide-subtitle">от ведущих <br>экспертов</div>
-                  <a href="#" class="button button-bordered">Начать учиться</a>
-                  <div class="home_promo__slide-img"><img src="img/home_promo-img-4.png" alt=""></div>
-                </div>
-                <div class="home_promo__slide home_promo__slide--with_img">
-                  <div class="home_promo__slide-title">Онлайн-курсы</div>
-                  <div class="home_promo__slide-subtitle">открывающие <br>новые возможности</div>
-                  <a href="#" class="button button-bordered">Начать учиться</a>
-                  <div class="home_promo__slide-img"><img src="img/home_promo-img-3.png" alt=""></div>
-                </div>
-                <div class="home_promo__slide home_promo__slide--with_img">
-                  <div class="home_promo__slide-title">Онлайн-курсы</div>
-                  <div class="home_promo__slide-subtitle">выбирай, <br>сравнивай, <br class="d-md-none">пробуй!</div>
-                  <a href="#" class="button button-bordered">Начать учиться</a>
-                  <div class="home_promo__slide-img"><img src="img/home_promo-img-4.png" alt=""></div>
-                </div>
-              </div>
-              <div class="home_promo__slider-dots"></div>
-            </div>
-          </div>
-          <div class="home_promo__right">
-            <div class="home_promo__slider">
-              <div class="home_promo__slider-list">
-                <div class="home_promo__slide">
-                  <div class="home_promo__slide-title">онлайн-школа, эксперт?</div>
-                  <div class="home_promo__slide-subtitle">делитесь своими знаниями и они достигнут миллионов!</div>
-                  <a href="#" class="button button-bordered button-alt">Опубликовать курс</a>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="popular_products">
-          <div class="popular_products__title">
-            <h2 class="section_title">Курсы по <b>999 ₽</b></h2>
-            <div class="popular_products__title-label wow">WOW</div>
+      	</div>
+      	<div class="col">
+      		<nav class="header__nav">
+      			<ul>
+      				<li><a href="#">Эксперты</a></li>
+      				<li><a href="#">Онлайн-школы</a></li>
+      				<li><a href="#" class="active">Курсы по 999</a></li>
+              <li><a href="#">Все по 149</a></li>
+              <li><a href="#">Статьи</a></li>
+      				<li><a href="#">Авторам</a></li>
+      			</ul>
+      		</nav>
+      	</div>
+      </div>
+    </div>
+  </header>
+</div>
+<section class="article">
+  <div class="container">
+    <div class="article_intro">
+      <div class="breadcrumbs">
+        <ul class="dragscroll-js">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Статьи</a></li>
+          <li><a href="#">Интернет-маркетинг</a></li>
+          <li>Стратегия интернет маркетинга 2022. Как создать с нуля?</li>
+        </ul>
+      </div>
+      <div class="article_intro__row row">
+        <div class="article_intro__text col-lg-6 col-12">
+          <h1 class="section_title">Стратегия интернет-маркетинга 2022. Как создать c нуля?</h1>
+          <div class="article_intro__descr">
+            Как выстроить стратегию интернет-маркетинга и увеличивать онлайн-продажи в условиях глобальной пандемии?
           </div>
-          <div class="popular_products__slider_wrap">
-            <div class="popular_products__slider">
-              <div class="popular_products__slider-list">
-                <div class="popular_products__slide">
+          <div class="article__rating">
+            <div class="article__rating-val">5</div>
+            <div class="article__rating-stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <a href="#comments" class="article__rating-total">(236 оценок)</a>
+          </div>
+          <div class="article__meta">
+            <div class="article__publishdate">13.11.2021</div>
+            <div class="article__meta-itm"><i class="fa fa-comment-o" aria-hidden="true"></i>631</div>
+            <div class="article__meta-itm"><i class="fa fa-eye" aria-hidden="true"></i>631</div>
+          </div>
+          <div class="article__manage">
+            <button class="article__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            <button class="article__manage-btn"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="article_intro__img col-lg-6 col-12">
+          <img src="img/img-1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row article_content">
+      <div class="col-lg-8 col-12">
+        <div class="article__contents">
+          <div class="article__contents-title">Содержание</div>
+          <ol>
+            <li><a href="#anchor-1">Что такое интернет-маркетинг?</a></li>
+            <li><a href="#anchor-2">Как выстроить стратегию интернет-маркетинга?</a></li>
+            <li><a href="#anchor-3">Как увеличить онлайн-продажи в условиях глобальной пандемии?</a></li>
+            <li><a href="#anchor-4">20 примеров успешных рекламных компаний</a></li>
+          </ol>
+        </div>
+        <div class="richtext article__text">
+          <p>Он предоставляет эффективные инструменты для <a href="#">лидогенерации</a> и построения коммуникации, чтобы взаимодействовать с аудиторией, измерять уровень вовлеченности и лояльности к бренду. Среди популярных каналов интернет-маркетинга находится email маркетинг, РРС, SMM, мессенджеры, чат-боты, web пуш-уведомления и поисковая оптимизация.</p>
+          <h2 id="anchor-1">Что такое интернет-маркетинг?</h2>
+          <p>Интернет-маркетинг — это продвижение товаров и услуг через онлайн-сервисы. В зависимости от размера бизнеса и занимаемой ниши, предприниматели используют разные каналы, начиная от РРС и заканчивая блогингом, где они делятся полезным контентом.</p>
+          <p>Например, показывают видеоролики с практическими руководствами, чтобы естественным образом продвигать продукты бренда:</p>
+          <ol>
+            <li>что уже сделали конкуренты?</li>
+            <li>какие бюджеты они инвестируют в рекламу?</li>
+            <li>как оценить результат от продвижения?</li>
+            <li>как перестать считать клики и добраться до денег?</li>
+            <li>кто тот посетитель, который не просто зайдёт на сайт, а все таки совершит конверсию?</li>
+          </ol>
+          <img src="img/img-2.jpg" alt="">
+          <p class="figcaption">Подпись к фото</p>
+          <img src="img/img-3.jpg" alt="">
+          <p class="figcaption">Подпись к фото</p>
+          <h2 id="anchor-2">Как выстраивать стратегию интернет-маркетинга?</h2>
+          <p>Этот канал позволяет выстраивать крепкие взаимоотношения с пользователями, которые подписались на получение писем бренда. Вы можете создать список рассылки, разместив формы подписки и лид-магниты на своём сайте или блоге. В обмен на email адрес пользователя предложите подарок, релевантный контент или скидку.</p>
+          <p>Отправляйте новым подписчикам автоматические приветственные письма и повышайте лояльность с помощью персонализированного контента.</p>
+          <p>Чтобы сделать письма настолько релевантными, насколько ожидают подписчики, используйте информацию, которой они делятся при подписке и анализируйте их поведение на сайте и в рассылках.</p>
+          <p>Создавайте индивидуально настроенные письма под каждого клиента. Для этого отслеживайте их прогресс в использовании сервиса. Ниже вы видите пример персонализированного письма от Lingualeo. В таких рассылках компания сообщает о его успехах в изучении языка.</p>
+          <h2 id="anchor-3">Как увеличить онлайн-продажи в условиях глоабльной пандемии?</h2>
+          <p>Создавайте индивидуально настроенные письма под каждого клиента. Для этого отслеживайте их прогресс в использовании сервиса. Ниже вы видите пример персонализированного письма от Lingualeo. В таких рассылках компания сообщает о его успехах в изучении языка.</p>
+          <h2  id="anchor-4">20 примеров успешных рекламных компаний</h2>
+          <p>Создавайте индивидуально настроенные письма под каждого клиента. Для этого отслеживайте их прогресс в использовании сервиса. Ниже вы видите пример персонализированного письма от Lingualeo. В таких рассылках компания сообщает о его успехах в изучении языка.</p>
+          <ul>
+            <li>что уже сделали конкуренты?</li>
+            <li>какие бюджеты они инвестируют в рекламу?</li>
+            <li>как оценить результат от продвижения?</li>
+          </ul>
+          <blockquote>
+            Создавайте индивидуально настроенные письма под каждого клиента. Для этого отслеживайте их прогресс в использовании сервиса. Ниже вы видите пример персонализированного письма от Lingualeo. В таких рассылках компания сообщает о его успехах в изучении языка.
+          </blockquote>
+        </div>
+        <div class="recommend_products">
+          <h2 class="section_title">Курсы по теме от автора</h2>
+          <div class="recommend_products__slider_wrap">
+            <div class="recommend_products__slider recommend_products__slider-3_slides">
+              <div class="recommend_products__slider-list">
+                <div class="recommend_products__slide">
                   <div class="shortcard">
   <div class="shortcard__thumb">
     <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
@@ -1359,7 +1395,7 @@
   <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
 </div>
                 </div>
-                <div class="popular_products__slide">
+                <div class="recommend_products__slide">
                   <div class="shortcard">
   <div class="shortcard__thumb">
     <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
@@ -1400,7 +1436,7 @@
   <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
 </div>
                 </div>
-                <div class="popular_products__slide">
+                <div class="recommend_products__slide">
                   <div class="shortcard">
   <div class="shortcard__thumb">
     <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
@@ -1441,7 +1477,7 @@
   <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
 </div>
                 </div>
-                <div class="popular_products__slide">
+                <div class="recommend_products__slide">
                   <div class="shortcard">
   <div class="shortcard__thumb">
     <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
@@ -1482,7 +1518,7 @@
   <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
 </div>
                 </div>
-                <div class="popular_products__slide">
+                <div class="recommend_products__slide">
                   <div class="shortcard">
   <div class="shortcard__thumb">
     <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
@@ -1523,7 +1559,7 @@
   <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
 </div>
                 </div>
-                <div class="popular_products__slide">
+                <div class="recommend_products__slide">
                   <div class="shortcard">
   <div class="shortcard__thumb">
     <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
@@ -1564,48 +1600,7 @@
   <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
 </div>
                 </div>
-                <div class="popular_products__slide">
-                  <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-                </div>
-                <div class="popular_products__slide">
+                <div class="recommend_products__slide">
                   <div class="shortcard">
   <div class="shortcard__thumb">
     <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
@@ -1648,1328 +1643,638 @@
                 </div>
               </div>
             </div>
-            <div class="popular_products__slider-dots"></div>
-            <button class="popular_products__slider-prev" aria-label="назад"></button>
-            <button class="popular_products__slider-next" aria-label="вперед"></button>
+            <button class="recommend_products__slider-prev" aria-label="назад"></button>
+            <button class="recommend_products__slider-next" aria-label="вперед"></button>
+            <div class="recommend_products__slider-dots"></div>
+          </div>
+        </div>
+        <div class="comments" id="comments">
+          <h2 class="section_title">Комментарии пользователей</h2>
+          <button class="button button-alt comments__toggle_form-btn">Оставить комментарий</button>
+          <div class="comments__form">
+            <div class="comments__form-title">Оставьте свой комментарий</div>
+            <form>
+              <div class="comments__form-subject">Стратегия интернет-маркетинга 2022. Как создать с нуля?</div>
+              <div class="form_filed">
+                <textarea placeholder="Введите текст"></textarea>
+              </div>
+              <div class="comments__form-rating">
+                <div class="comments__form-rating__title">Насколько эта статья была полезной для вас?</div>
+                <div class="comments__form-rating__stars">
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <input type="text" class="comments__form-rating__val">
+                </div>
+              </div>
+              <button type="submit" class="button button-alt">Отправить</button>
+            </form>
+          </div>
+          <div class="comments__list">
+            <select class="custom_select">
+              <option value="Сначала новые">Сначала новые</option>
+              <option value="Сначала старые">Сначала старые</option>
+            </select>
+            <div class="comment">
+              <div class="comment__ava">ИФ</div>
+              <div class="comment__author">Иван Фёдоров</div>
+              <div class="comment__meta">
+                <div class="comment__rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="comment__date">2 месяца назад</div>
+              </div>
+              <div class="comment__title">Стратегия интернет-маркетинга 2022. Как создать с нуля?</div>
+              <div class="comment__text richtext">
+                Много полезной и необходимой для любого собственника бизнеса информации, компактно и в очень доступной форме, представленной на этом курсе
+              </div>
+              <div class="comment__like">
+                <div class="comment__like-title">Этот отзыв оказался полезным?</div>
+                <div class="comment__like-btns">
+                  <button class="comment__like-btn"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+                  <button class="comment__like-btn"><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+                  <button class="comment__like-complain_btn">Пожаловаться</button>
+                </div>
+              </div>
+              <div class="comment__reply">
+                <div class="comment">
+                  <div class="comment__ava">НГ<img src="img/ava-2.jpg" alt=""></div>
+                  <div class="comment__author">Ната Гончар</div>
+                  <div class="comment__meta">
+                    <div class="comment__meta-note">Ответ преподавателя</div>
+                    <div class="comment__date">6 месяцев назад</div>
+                  </div>
+                  <div class="comment__text richtext">
+                    <p>Здравствуйте, Александр!</p>
+                    <p>Благодарю вас за комментарий!</p>
+                    <p>Пускай приобретённые знания способствуют достижению высоких результатов! Пускай приобретённые знания способствуют достижению высоких результатов!</p>
+                    <p>Пускай приобретённые знания способствуют достижению высоких результатов! Пускай приобретённые знания способствуют достижению высоких результатов!</p>
+                    <p>Пускай приобретённые знания способствуют достижению высоких результатов! Пускай приобретённые знания способствуют достижению высоких результатов!</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommend_products">
+          <div class="row align-items-center">
+            <div class="col-md">
+              <h2 class="section_title">Курсы по теме</h2>
+            </div>
+            <div class="col-md-auto">
+              <a href="#" class="recommend_products__more_btn">Смотреть все</a>
+            </div>
+          </div>
+          <div class="recommend_products__slider_wrap">
+            <div class="recommend_products__slider recommend_products__slider-3_slides">
+              <div class="recommend_products__slider-list">
+                <div class="recommend_products__slide">
+                  <div class="shortcard">
+  <div class="shortcard__thumb">
+    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <div class="shortcard__tag">-25%</div>
+      <a href="#" class="shortcard__tag">Фитнес</a>
+    </div>
+    <div class="shortcard__tags shortcard__tags--top">
+      <div class="shortcard__tag">Лидер продаж</div>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__suptitle">
+      <div class="shortcard__price_block">
+        <div class="shortcard__price">2 200 ₽</div>
+        <div class="shortcard__old_price">4 500</div>
+      </div>
+      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
+    </div>
+    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
+    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
+    <div class="shortcard__rating">
+      <div class="shortcard__rating-val">4,7</div>
+      <div class="shortcard__rating-stars">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      </div>
+      <div class="shortcard__rating-cnt">459</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard">
+  <div class="shortcard__thumb">
+    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <div class="shortcard__tag">-25%</div>
+      <a href="#" class="shortcard__tag">Фитнес</a>
+    </div>
+    <div class="shortcard__tags shortcard__tags--top">
+      <div class="shortcard__tag">Лидер продаж</div>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__suptitle">
+      <div class="shortcard__price_block">
+        <div class="shortcard__price">2 200 ₽</div>
+        <div class="shortcard__old_price">4 500</div>
+      </div>
+      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
+    </div>
+    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
+    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
+    <div class="shortcard__rating">
+      <div class="shortcard__rating-val">4,7</div>
+      <div class="shortcard__rating-stars">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      </div>
+      <div class="shortcard__rating-cnt">459</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard">
+  <div class="shortcard__thumb">
+    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <div class="shortcard__tag">-25%</div>
+      <a href="#" class="shortcard__tag">Фитнес</a>
+    </div>
+    <div class="shortcard__tags shortcard__tags--top">
+      <div class="shortcard__tag">Лидер продаж</div>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__suptitle">
+      <div class="shortcard__price_block">
+        <div class="shortcard__price">2 200 ₽</div>
+        <div class="shortcard__old_price">4 500</div>
+      </div>
+      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
+    </div>
+    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
+    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
+    <div class="shortcard__rating">
+      <div class="shortcard__rating-val">4,7</div>
+      <div class="shortcard__rating-stars">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      </div>
+      <div class="shortcard__rating-cnt">459</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard">
+  <div class="shortcard__thumb">
+    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <div class="shortcard__tag">-25%</div>
+      <a href="#" class="shortcard__tag">Фитнес</a>
+    </div>
+    <div class="shortcard__tags shortcard__tags--top">
+      <div class="shortcard__tag">Лидер продаж</div>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__suptitle">
+      <div class="shortcard__price_block">
+        <div class="shortcard__price">2 200 ₽</div>
+        <div class="shortcard__old_price">4 500</div>
+      </div>
+      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
+    </div>
+    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
+    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
+    <div class="shortcard__rating">
+      <div class="shortcard__rating-val">4,7</div>
+      <div class="shortcard__rating-stars">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      </div>
+      <div class="shortcard__rating-cnt">459</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard">
+  <div class="shortcard__thumb">
+    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <div class="shortcard__tag">-25%</div>
+      <a href="#" class="shortcard__tag">Фитнес</a>
+    </div>
+    <div class="shortcard__tags shortcard__tags--top">
+      <div class="shortcard__tag">Лидер продаж</div>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__suptitle">
+      <div class="shortcard__price_block">
+        <div class="shortcard__price">2 200 ₽</div>
+        <div class="shortcard__old_price">4 500</div>
+      </div>
+      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
+    </div>
+    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
+    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
+    <div class="shortcard__rating">
+      <div class="shortcard__rating-val">4,7</div>
+      <div class="shortcard__rating-stars">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      </div>
+      <div class="shortcard__rating-cnt">459</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard">
+  <div class="shortcard__thumb">
+    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <div class="shortcard__tag">-25%</div>
+      <a href="#" class="shortcard__tag">Фитнес</a>
+    </div>
+    <div class="shortcard__tags shortcard__tags--top">
+      <div class="shortcard__tag">Лидер продаж</div>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__suptitle">
+      <div class="shortcard__price_block">
+        <div class="shortcard__price">2 200 ₽</div>
+        <div class="shortcard__old_price">4 500</div>
+      </div>
+      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
+    </div>
+    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
+    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
+    <div class="shortcard__rating">
+      <div class="shortcard__rating-val">4,7</div>
+      <div class="shortcard__rating-stars">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      </div>
+      <div class="shortcard__rating-cnt">459</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard">
+  <div class="shortcard__thumb">
+    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <div class="shortcard__tag">-25%</div>
+      <a href="#" class="shortcard__tag">Фитнес</a>
+    </div>
+    <div class="shortcard__tags shortcard__tags--top">
+      <div class="shortcard__tag">Лидер продаж</div>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__suptitle">
+      <div class="shortcard__price_block">
+        <div class="shortcard__price">2 200 ₽</div>
+        <div class="shortcard__old_price">4 500</div>
+      </div>
+      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
+    </div>
+    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
+    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
+    <div class="shortcard__rating">
+      <div class="shortcard__rating-val">4,7</div>
+      <div class="shortcard__rating-stars">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      </div>
+      <div class="shortcard__rating-cnt">459</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
+</div>
+                </div>
+              </div>
+            </div>
+            <button class="recommend_products__slider-prev" aria-label="назад"></button>
+            <button class="recommend_products__slider-next" aria-label="вперед"></button>
+            <div class="recommend_products__slider-dots"></div>
+          </div>
+        </div>
+        <div class="recommend_products">
+          <div class="row align-items-center">
+            <div class="col-md">
+              <h2 class="section_title">Статьи по теме</h2>
+            </div>
+            <div class="col-md-auto">
+              <a href="#" class="recommend_products__more_btn">Смотреть все</a>
+            </div>
+          </div>
+          <div class="recommend_products__slider_wrap">
+            <div class="recommend_products__slider recommend_products__slider-3_slides">
+              <div class="recommend_products__slider-list">
+                <div class="recommend_products__slide">
+                  <div class="shortcard shortcard--article">
+  <div class="shortcard__thumb">
+    <img src="img/article_previer.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <a href="#" class="shortcard__tag">Здоровье</a>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__title">Правильное питание - ваш залог успеха в жизни. Пр</div>
+    <div class="shortcard__excerpt">Каждый год появляется все больше и больше приверженцев здорового питания. Но мало перестать употреблять вредные продукты</div>
+    <div class="shortcard__meta">
+      <div class="shortcard__date">21.12.2020</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-eye" aria-hidden="true"></i>631</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-comment-o" aria-hidden="true"></i>631</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Правильное питание - ваш залог успеха в жизни. Правильное питание ваш з"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard shortcard--article">
+  <div class="shortcard__thumb">
+    <img src="img/article_previer.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <a href="#" class="shortcard__tag">Здоровье</a>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__title">Правильное питание - ваш залог успеха в жизни. Пр</div>
+    <div class="shortcard__excerpt">Каждый год появляется все больше и больше приверженцев здорового питания. Но мало перестать употреблять вредные продукты</div>
+    <div class="shortcard__meta">
+      <div class="shortcard__date">21.12.2020</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-eye" aria-hidden="true"></i>631</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-comment-o" aria-hidden="true"></i>631</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Правильное питание - ваш залог успеха в жизни. Правильное питание ваш з"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard shortcard--article">
+  <div class="shortcard__thumb">
+    <img src="img/article_previer.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <a href="#" class="shortcard__tag">Здоровье</a>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__title">Правильное питание - ваш залог успеха в жизни. Пр</div>
+    <div class="shortcard__excerpt">Каждый год появляется все больше и больше приверженцев здорового питания. Но мало перестать употреблять вредные продукты</div>
+    <div class="shortcard__meta">
+      <div class="shortcard__date">21.12.2020</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-eye" aria-hidden="true"></i>631</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-comment-o" aria-hidden="true"></i>631</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Правильное питание - ваш залог успеха в жизни. Правильное питание ваш з"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard shortcard--article">
+  <div class="shortcard__thumb">
+    <img src="img/article_previer.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <a href="#" class="shortcard__tag">Здоровье</a>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__title">Правильное питание - ваш залог успеха в жизни. Пр</div>
+    <div class="shortcard__excerpt">Каждый год появляется все больше и больше приверженцев здорового питания. Но мало перестать употреблять вредные продукты</div>
+    <div class="shortcard__meta">
+      <div class="shortcard__date">21.12.2020</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-eye" aria-hidden="true"></i>631</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-comment-o" aria-hidden="true"></i>631</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Правильное питание - ваш залог успеха в жизни. Правильное питание ваш з"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard shortcard--article">
+  <div class="shortcard__thumb">
+    <img src="img/article_previer.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <a href="#" class="shortcard__tag">Здоровье</a>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__title">Правильное питание - ваш залог успеха в жизни. Пр</div>
+    <div class="shortcard__excerpt">Каждый год появляется все больше и больше приверженцев здорового питания. Но мало перестать употреблять вредные продукты</div>
+    <div class="shortcard__meta">
+      <div class="shortcard__date">21.12.2020</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-eye" aria-hidden="true"></i>631</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-comment-o" aria-hidden="true"></i>631</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Правильное питание - ваш залог успеха в жизни. Правильное питание ваш з"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard shortcard--article">
+  <div class="shortcard__thumb">
+    <img src="img/article_previer.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <a href="#" class="shortcard__tag">Здоровье</a>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__title">Правильное питание - ваш залог успеха в жизни. Пр</div>
+    <div class="shortcard__excerpt">Каждый год появляется все больше и больше приверженцев здорового питания. Но мало перестать употреблять вредные продукты</div>
+    <div class="shortcard__meta">
+      <div class="shortcard__date">21.12.2020</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-eye" aria-hidden="true"></i>631</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-comment-o" aria-hidden="true"></i>631</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Правильное питание - ваш залог успеха в жизни. Правильное питание ваш з"></a>
+</div>
+                </div>
+                <div class="recommend_products__slide">
+                  <div class="shortcard shortcard--article">
+  <div class="shortcard__thumb">
+    <img src="img/article_previer.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
+    <div class="shortcard__tags shortcard__tags--left">
+      <a href="#" class="shortcard__tag">Здоровье</a>
+    </div>
+    <div class="shortcard__manage">
+      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="shortcard__body">
+    <div class="shortcard__title">Правильное питание - ваш залог успеха в жизни. Пр</div>
+    <div class="shortcard__excerpt">Каждый год появляется все больше и больше приверженцев здорового питания. Но мало перестать употреблять вредные продукты</div>
+    <div class="shortcard__meta">
+      <div class="shortcard__date">21.12.2020</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-eye" aria-hidden="true"></i>631</div>
+      <div class="shortcard__meta-itm"><i class="fa fa-comment-o" aria-hidden="true"></i>631</div>
+    </div>
+  </div>
+  <a href="#" class="shortcard__link" title="Правильное питание - ваш залог успеха в жизни. Правильное питание ваш з"></a>
+</div>
+                </div>
+              </div>
+              <button class="recommend_products__slider-prev" aria-label="назад"></button>
+              <button class="recommend_products__slider-next" aria-label="вперед"></button>
+              <div class="recommend_products__slider-dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="article_sidebar">
+          <a href="#" class="article__author">
+            <img src="img/ava-2.jpg" alt="" class="article__author-img">
+            <div class="article__author-name">Ната Гончар</div>
+            <div class="article__author-post">Нутрициолог, детокс-коуч</div>
+          </a>
+          <div class="article_sidebar__stiky">
+            <div class="article_sidebar__course">
+              <div class="article_sidebar__course-file">
+                <img src="img/pdf.svg" alt="" width="28" height="28">
+                Формат файла: PDF
+              </div>
+              <div class="article_sidebar__course-header">
+                <div class="article_sidebar__course-title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
+                <img src="img/gift.svg" alt="" width="32" height="32" class="article_sidebar__course-gift_img">
+              </div>
+              <img src="img/img-4.jpg" alt="" class="article_sidebar__course-img">
+              <a href="#" class="button button-alt">Получить бесплатно</a>
+              <div class="article_sidebar__course-note">Доступно бесплатно только за первую регистрации на WEDUM</div>
+            </div>
+            <button class="article_sidebar__error_btn"><img src="img/talk.svg" alt="">Сообщить об ошибке</button>
           </div>
         </div>
       </div>
     </div>
+    <button class="article_sidebar__error_btn d-lg-none"><img src="img/talk.svg" alt="">Сообщить об ошибке</button>
   </div>
 </section>
-<section class="home_categories section">
+<div class="article__top_bar">
   <div class="container">
-    <h2 class="section_title">Начните учиться прямо сейчас</h2>
-    <div class="home_categories__subtitle">Выберите тему, которая вам интересна</div>
-    <div class="home_categories__list row">
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/health.svg" alt="" width="32" height="32">Здоровье</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/weight-loss.svg" alt="" width="32" height="32">Похудение</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/fitness.svg" alt="" width="32" height="32">Спорт и йога</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/lipstick.svg" alt="" width="32" height="32">Красота и уход</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/dress.svg" alt="" width="32" height="32">Мода и стиль</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/big-lotus-flower.svg" alt="" width="32" height="32">Духовные практики</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/finance.svg" alt="" width="32" height="32">Финансы</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/businessman.svg" alt="" width="32" height="32">Личностный рост</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/employee-transfer.svg" alt="" width="32" height="32">Отношения</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/pencil.svg" alt="" width="32" height="32">Творчество и хобби</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/museum.svg" alt="" width="32" height="32">Культура</a></div>
-      <div class="col-xl-2 col-lg-3 col-md-4"><a href="#" class="home_categories__itm"><img src="img/categories/briefcase.svg" alt="" width="32" height="32">Карьера и работа</a></div>
+    <div class="row align-items-center">
+      <div class="col-8 d-none d-lg-block">
+        <div class="article__top_bar-title">Стратегия инетернет-маркетинга 2022. Как создать с нуля?</div>
+        <div class="article__top_bar-meta">
+          <div class="article__top_bar-author">Эксперт: <a href="#">Ната Гончар</a></div>
+          <div class="article__rating">
+            <div class="article__rating-val">5</div>
+            <div class="article__rating-stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <a href="#comments" class="article__rating-total">(236 оценок)</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <a href="#" class="article__author">
+          <img src="img/ava-2.jpg" alt="" class="article__author-img">
+          <div class="article__author-name">Ната Гончар</div>
+          <div class="article__author-post">Нутрициолог, детокс-коуч</div>
+        </a>
+      </div>
     </div>
-    <div class="home_categories__more"><a href="#">Все категории</a></div>
   </div>
-</section>
-<section class="section recommend_products">
+</div>
+<div class="article__bot_bar">
   <div class="container">
-  	<div class="popular_products__title">
-	    <h2 class="section_title">Новые и популярные курсы</h2>
-       <div class="popular_products__title-label">New</div>
-		</div>
-    <div class="recommend_products__tags">
-      <div class="recommend_products__tags-slider">
-        <div class="recommend_products__tags-list">
-          <div class="recommend_products__tags-slide"><a href="#" class="tag active">Спорт и йога</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Красота и уход</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Мода и стиль</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Культура</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Отношения</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Похудение и коррекция фигуры</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Бизнес-обучение</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Психология</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Спорт и йога</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Красота и уход</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Мода и стиль</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Культура</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Отношения</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Похудение и коррекция фигуры</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Бизнес-обучение</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Психология</a></div>
-        </div>
-      </div>
-      <button class="recommend_products__tags-prev" aria-label="назад"></button>
-      <button class="recommend_products__tags-next" aria-label="вперед"></button>
-    </div>
-    <div class="recommend_products__slider_wrap">
-      <div class="recommend_products__slider recommend_products__slider-5_slides">
-        <div class="recommend_products__slider-list">
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
+    <div class="article__bot_bar-title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
+    <a href="#" class="button button-alt">Получить бесплатно</a>
   </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
 </div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-        </div>
-      </div>
-      <button class="recommend_products__slider-prev" aria-label="назад"></button>
-      <button class="recommend_products__slider-next" aria-label="вперед"></button>
-      <div class="recommend_products__slider-dots"></div>
-    </div>
-  </div>
-</section>
-<section class="cta cta--test section">
-  <div class="container">
-    <div class="cta__content_wrap">
-      <div class="cta__content">
-        <div class="row align-items-center">
-          <div class="col-md-3 cta__img">
-            <img src="img/cta-img-1.png" alt="" class="">
-          </div>
-          <div class="col-md-5">
-            <h2 class="cta__title">Пройди тест</h2>
-            <div class="cta__descr">узнай какие курсы тебе&nbsp;подходят</div>
-          </div>
-          <div class="col-md-4"><a href="#" class="button button-bordered">Пройти тест</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="home_authors section">
-  <div class="container">
-    <h2 class="section_title">Эксперты и Авторы</h2>
-    <div class="home_authors__slider_wrap">
-      <div class="home_authors__slider">
-        <div class="home_authors__slider-list">
-          <div class="home_authors__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/author_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <a href="#" class="shortcard__tag">Заработок в сети</a>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__title">Верещагина Людмила</div>
-    <div class="shortcard__descr">Эксперт по формированию маркетинговых стратегий и продвижению в интернете. Бизнес-тренер, консультант и маркетолог.</div>
-    <div class="shortcard__consist">
-      <div class="shortcard__consist-itm" data-title="Количество курсов"><i class="fa fa-book" aria-hidden="true"></i>15 курсов</div>
-      <div class="shortcard__consist-itm" data-title="Количество студентов"><i class="fa fa-graduation-cap" aria-hidden="true"></i>30 студентов</div>
-    </div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Верещагина Людмила"></a>
-</div>
-          </div>
-          <div class="home_authors__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/author_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <a href="#" class="shortcard__tag">Заработок в сети</a>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__title">Верещагина Людмила</div>
-    <div class="shortcard__descr">Эксперт по формированию маркетинговых стратегий и продвижению в интернете. Бизнес-тренер, консультант и маркетолог.</div>
-    <div class="shortcard__consist">
-      <div class="shortcard__consist-itm" data-title="Количество курсов"><i class="fa fa-book" aria-hidden="true"></i>15 курсов</div>
-      <div class="shortcard__consist-itm" data-title="Количество студентов"><i class="fa fa-graduation-cap" aria-hidden="true"></i>30 студентов</div>
-    </div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Верещагина Людмила"></a>
-</div>
-          </div>
-          <div class="home_authors__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/author_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <a href="#" class="shortcard__tag">Заработок в сети</a>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__title">Верещагина Людмила</div>
-    <div class="shortcard__descr">Эксперт по формированию маркетинговых стратегий и продвижению в интернете. Бизнес-тренер, консультант и маркетолог.</div>
-    <div class="shortcard__consist">
-      <div class="shortcard__consist-itm" data-title="Количество курсов"><i class="fa fa-book" aria-hidden="true"></i>15 курсов</div>
-      <div class="shortcard__consist-itm" data-title="Количество студентов"><i class="fa fa-graduation-cap" aria-hidden="true"></i>30 студентов</div>
-    </div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Верещагина Людмила"></a>
-</div>
-          </div>
-          <div class="home_authors__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/author_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <a href="#" class="shortcard__tag">Заработок в сети</a>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__title">Верещагина Людмила</div>
-    <div class="shortcard__descr">Эксперт по формированию маркетинговых стратегий и продвижению в интернете. Бизнес-тренер, консультант и маркетолог.</div>
-    <div class="shortcard__consist">
-      <div class="shortcard__consist-itm" data-title="Количество курсов"><i class="fa fa-book" aria-hidden="true"></i>15 курсов</div>
-      <div class="shortcard__consist-itm" data-title="Количество студентов"><i class="fa fa-graduation-cap" aria-hidden="true"></i>30 студентов</div>
-    </div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Верещагина Людмила"></a>
-</div>
-          </div>
-          <div class="home_authors__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/author_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <a href="#" class="shortcard__tag">Заработок в сети</a>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__title">Верещагина Людмила</div>
-    <div class="shortcard__descr">Эксперт по формированию маркетинговых стратегий и продвижению в интернете. Бизнес-тренер, консультант и маркетолог.</div>
-    <div class="shortcard__consist">
-      <div class="shortcard__consist-itm" data-title="Количество курсов"><i class="fa fa-book" aria-hidden="true"></i>15 курсов</div>
-      <div class="shortcard__consist-itm" data-title="Количество студентов"><i class="fa fa-graduation-cap" aria-hidden="true"></i>30 студентов</div>
-    </div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Верещагина Людмила"></a>
-</div>
-          </div>
-          <div class="home_authors__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/author_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <a href="#" class="shortcard__tag">Заработок в сети</a>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__title">Верещагина Людмила</div>
-    <div class="shortcard__descr">Эксперт по формированию маркетинговых стратегий и продвижению в интернете. Бизнес-тренер, консультант и маркетолог.</div>
-    <div class="shortcard__consist">
-      <div class="shortcard__consist-itm" data-title="Количество курсов"><i class="fa fa-book" aria-hidden="true"></i>15 курсов</div>
-      <div class="shortcard__consist-itm" data-title="Количество студентов"><i class="fa fa-graduation-cap" aria-hidden="true"></i>30 студентов</div>
-    </div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Верещагина Людмила"></a>
-</div>
-          </div>
-          <div class="home_authors__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/author_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <a href="#" class="shortcard__tag">Заработок в сети</a>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__title">Верещагина Людмила</div>
-    <div class="shortcard__descr">Эксперт по формированию маркетинговых стратегий и продвижению в интернете. Бизнес-тренер, консультант и маркетолог.</div>
-    <div class="shortcard__consist">
-      <div class="shortcard__consist-itm" data-title="Количество курсов"><i class="fa fa-book" aria-hidden="true"></i>15 курсов</div>
-      <div class="shortcard__consist-itm" data-title="Количество студентов"><i class="fa fa-graduation-cap" aria-hidden="true"></i>30 студентов</div>
-    </div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Верещагина Людмила"></a>
-</div>
-          </div>
-        </div>
-      </div>
-      <div class="home_authors__slider-dots"></div>
-      <button class="home_authors__slider-prev" aria-label="назад"></button>
-      <button class="home_authors__slider-next" aria-label="вперед"></button>
-    </div>
-  </div>
-</section>
-<section class="section philosophy">
-  <div class="container">
-    <h2 class="section_title">Философия WEDUM</h2>
-    <div class="philosophy__list row">
-      <div class="col-md-6 col-12">
-        <div class="philosophy__itm philosophy__itm--logo">
-          <h3 class="philosophy__itm-title">Меняй жизнь <br>к лучшему!</h3>
-          <p>Почувствуй уверенность и гармонию с помощью знаний</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-12">
-        <div class="philosophy__itm">
-          <img src="img/philosophy-img-1.png" alt="" class="philosophy__itm-img">
-          <h3 class="philosophy__itm-title">Бери лучшие курсы от ведущих экспертов!</h3>
-          <p>Сосредоточься только на обучении, ведь всё лучшее уже есть на Wedum</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-12">
-        <div class="philosophy__itm">
-          <img src="img/philosophy-img-2.png" alt="" class="philosophy__itm-img">
-          <h3 class="philosophy__itm-title">Открывай новые возможности!</h3>
-          <p>Занимайся из любой точки мира в удобном и современном формате</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-12">
-        <div class="philosophy__itm philosophy__itm--logo">
-          <h3 class="philosophy__itm-title">Выбирай, сравнивай, пробуй!</h3>
-          <p>Если не понравится — вернём деньги</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section recommend_products">
-  <div class="container">
-    <h2 class="section_title">Рекомендованные курсы</h2>
-    <div class="recommend_products__tags">
-      <div class="recommend_products__tags-slider">
-        <div class="recommend_products__tags-list">
-          <div class="recommend_products__tags-slide"><a href="#" class="tag active">Спорт и йога</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Красота и уход</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Мода и стиль</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Культура</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Отношения</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Похудение и коррекция фигуры</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Бизнес-обучение</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Психология</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Спорт и йога</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Красота и уход</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Мода и стиль</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Культура</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Отношения</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Похудение и коррекция фигуры</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Бизнес-обучение</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Психология</a></div>
-        </div>
-      </div>
-      <button class="recommend_products__tags-prev" aria-label="назад"></button>
-      <button class="recommend_products__tags-next" aria-label="вперед"></button>
-    </div>
-    <div class="recommend_products__slider_wrap">
-      <div class="recommend_products__slider recommend_products__slider-5_slides">
-        <div class="recommend_products__slider-list">
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-  <div class="shortcard__thumb">
-    <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-    <div class="shortcard__tags shortcard__tags--left">
-      <div class="shortcard__tag">-25%</div>
-      <a href="#" class="shortcard__tag">Фитнес</a>
-    </div>
-    <div class="shortcard__tags shortcard__tags--top">
-      <div class="shortcard__tag">Лидер продаж</div>
-    </div>
-    <div class="shortcard__manage">
-      <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-      <button class="shortcard__manage-btn"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="shortcard__body">
-    <div class="shortcard__suptitle">
-      <div class="shortcard__price_block">
-        <div class="shortcard__price">2 200 ₽</div>
-        <div class="shortcard__old_price">4 500</div>
-      </div>
-      <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-    </div>
-    <div class="shortcard__title">Чакра-йога. 7 способов активизации внутренних ресурсов</div>
-    <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-    <div class="shortcard__rating">
-      <div class="shortcard__rating-val">4,7</div>
-      <div class="shortcard__rating-stars">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-      </div>
-      <div class="shortcard__rating-cnt">459</div>
-    </div>
-  </div>
-  <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-</div>
-          </div>
-        </div>
-      </div>
-      <button class="recommend_products__slider-prev" aria-label="назад"></button>
-      <button class="recommend_products__slider-next" aria-label="вперед"></button>
-      <div class="recommend_products__slider-dots"></div>
-    </div>
-  </div>
-</section>
-<section class="cta cta--callback section">
-  <div class="container">
-    <div class="cta__content_wrap">
-      <div class="cta__content">
-        <div class="row align-items-center">
-          <div class="col-lg-4 col-md-3 col-12 cta__img">
-            <img src="img/cta-img-2.png" alt="" class="">
-          </div>
-          <div class="col-lg-4 col-md-5 col-12">
-            <h2 class="cta__title">Зарабатывай</h2>
-            <div class="cta__descr">рекомендуя курсы друзьям</div>
-          </div>
-          <div class="col-lg-4 col-md-3 col-12"><a href="#" class="button button-bordered">Подробнее</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section recommend_products">
-  <div class="container">
-	  <h2 class="section_title">Полезные материалы</h2>
-    <div class="recommend_products__tags">
-      <div class="recommend_products__tags-slider">
-        <div class="recommend_products__tags-list">
-          <div class="recommend_products__tags-slide"><a href="#" class="tag active">Спорт и йога</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Красота и уход</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Мода и стиль</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Культура</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Отношения</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Похудение и коррекция фигуры</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Бизнес-обучение</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Психология</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Спорт и йога</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Красота и уход</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Мода и стиль</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Культура</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Отношения</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Похудение и коррекция фигуры</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Бизнес-обучение</a></div>
-          <div class="recommend_products__tags-slide"><a href="#" class="tag">Психология</a></div>
-        </div>
-      </div>
-      <button class="recommend_products__tags-prev" aria-label="назад"></button>
-      <button class="recommend_products__tags-next" aria-label="вперед"></button>
-    </div>
-    <div class="recommend_products__slider_wrap">
-      <div class="recommend_products__slider recommend_products__slider-5_slides">
-        <div class="recommend_products__slider-list">
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-        <div class="shortcard__thumb">
-          <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-          <div class="shortcard__tags shortcard__tags--left">
-            <a href="#" class="shortcard__tag">Заработок в интернете</a>
-          </div>
-          <div class="shortcard__tags shortcard__tags--top">
-            <div class="shortcard__tag">Чек-лист</div>
-            <div class="shortcard__tag">Лидер продаж</div>
-          </div>
-          <div class="shortcard__manage">
-            <button class="shortcard__manage-btn shortcard__manage-file" data-title="Формат: EXCEL"><img src="img/excel.svg" alt="" width="15" height="15"></button>
-            <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-          </div>
-        </div>
-        <div class="shortcard__body">
-          <div class="shortcard__suptitle">
-            <div class="shortcard__price_block">
-              <div class="shortcard__price shortcard__price--free">Бесплатно</div>
-            </div>
-            <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-          </div>
-          <div class="shortcard__title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
-          <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-          <div class="shortcard__rating">
-            <div class="shortcard__rating-val">4,7</div>
-            <div class="shortcard__rating-stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-            <div class="shortcard__rating-cnt">459</div>
-          </div>
-
-        </div>
-        <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-      </div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-        <div class="shortcard__thumb">
-          <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-          <div class="shortcard__tags shortcard__tags--left">
-            <a href="#" class="shortcard__tag">Заработок в интернете</a>
-          </div>
-          <div class="shortcard__tags shortcard__tags--top">
-            <div class="shortcard__tag">Чек-лист</div>
-            <div class="shortcard__tag">Лидер продаж</div>
-          </div>
-          <div class="shortcard__manage">
-            <button class="shortcard__manage-btn shortcard__manage-file" data-title="Формат: EXCEL"><img src="img/excel.svg" alt="" width="15" height="15"></button>
-            <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-          </div>
-        </div>
-        <div class="shortcard__body">
-          <div class="shortcard__suptitle">
-            <div class="shortcard__price_block">
-              <div class="shortcard__price shortcard__price--free">Бесплатно</div>
-            </div>
-            <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-          </div>
-          <div class="shortcard__title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
-          <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-          <div class="shortcard__rating">
-            <div class="shortcard__rating-val">4,7</div>
-            <div class="shortcard__rating-stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-            <div class="shortcard__rating-cnt">459</div>
-          </div>
-
-        </div>
-        <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-      </div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-        <div class="shortcard__thumb">
-          <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-          <div class="shortcard__tags shortcard__tags--left">
-            <a href="#" class="shortcard__tag">Заработок в интернете</a>
-          </div>
-          <div class="shortcard__tags shortcard__tags--top">
-            <div class="shortcard__tag">Чек-лист</div>
-            <div class="shortcard__tag">Лидер продаж</div>
-          </div>
-          <div class="shortcard__manage">
-            <button class="shortcard__manage-btn shortcard__manage-file" data-title="Формат: EXCEL"><img src="img/excel.svg" alt="" width="15" height="15"></button>
-            <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-          </div>
-        </div>
-        <div class="shortcard__body">
-          <div class="shortcard__suptitle">
-            <div class="shortcard__price_block">
-              <div class="shortcard__price shortcard__price--free">Бесплатно</div>
-            </div>
-            <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-          </div>
-          <div class="shortcard__title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
-          <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-          <div class="shortcard__rating">
-            <div class="shortcard__rating-val">4,7</div>
-            <div class="shortcard__rating-stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-            <div class="shortcard__rating-cnt">459</div>
-          </div>
-
-        </div>
-        <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-      </div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-        <div class="shortcard__thumb">
-          <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-          <div class="shortcard__tags shortcard__tags--left">
-            <a href="#" class="shortcard__tag">Заработок в интернете</a>
-          </div>
-          <div class="shortcard__tags shortcard__tags--top">
-            <div class="shortcard__tag">Чек-лист</div>
-            <div class="shortcard__tag">Лидер продаж</div>
-          </div>
-          <div class="shortcard__manage">
-            <button class="shortcard__manage-btn shortcard__manage-file" data-title="Формат: EXCEL"><img src="img/excel.svg" alt="" width="15" height="15"></button>
-            <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-          </div>
-        </div>
-        <div class="shortcard__body">
-          <div class="shortcard__suptitle">
-            <div class="shortcard__price_block">
-              <div class="shortcard__price shortcard__price--free">Бесплатно</div>
-            </div>
-            <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-          </div>
-          <div class="shortcard__title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
-          <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-          <div class="shortcard__rating">
-            <div class="shortcard__rating-val">4,7</div>
-            <div class="shortcard__rating-stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-            <div class="shortcard__rating-cnt">459</div>
-          </div>
-
-        </div>
-        <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-      </div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-        <div class="shortcard__thumb">
-          <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-          <div class="shortcard__tags shortcard__tags--left">
-            <a href="#" class="shortcard__tag">Заработок в интернете</a>
-          </div>
-          <div class="shortcard__tags shortcard__tags--top">
-            <div class="shortcard__tag">Чек-лист</div>
-            <div class="shortcard__tag">Лидер продаж</div>
-          </div>
-          <div class="shortcard__manage">
-            <button class="shortcard__manage-btn shortcard__manage-file" data-title="Формат: EXCEL"><img src="img/excel.svg" alt="" width="15" height="15"></button>
-            <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-          </div>
-        </div>
-        <div class="shortcard__body">
-          <div class="shortcard__suptitle">
-            <div class="shortcard__price_block">
-              <div class="shortcard__price shortcard__price--free">Бесплатно</div>
-            </div>
-            <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-          </div>
-          <div class="shortcard__title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
-          <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-          <div class="shortcard__rating">
-            <div class="shortcard__rating-val">4,7</div>
-            <div class="shortcard__rating-stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-            <div class="shortcard__rating-cnt">459</div>
-          </div>
-
-        </div>
-        <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-      </div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-        <div class="shortcard__thumb">
-          <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-          <div class="shortcard__tags shortcard__tags--left">
-            <a href="#" class="shortcard__tag">Заработок в интернете</a>
-          </div>
-          <div class="shortcard__tags shortcard__tags--top">
-            <div class="shortcard__tag">Чек-лист</div>
-            <div class="shortcard__tag">Лидер продаж</div>
-          </div>
-          <div class="shortcard__manage">
-            <button class="shortcard__manage-btn shortcard__manage-file" data-title="Формат: EXCEL"><img src="img/excel.svg" alt="" width="15" height="15"></button>
-            <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-          </div>
-        </div>
-        <div class="shortcard__body">
-          <div class="shortcard__suptitle">
-            <div class="shortcard__price_block">
-              <div class="shortcard__price shortcard__price--free">Бесплатно</div>
-            </div>
-            <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-          </div>
-          <div class="shortcard__title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
-          <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-          <div class="shortcard__rating">
-            <div class="shortcard__rating-val">4,7</div>
-            <div class="shortcard__rating-stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-            <div class="shortcard__rating-cnt">459</div>
-          </div>
-
-        </div>
-        <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-      </div>
-          </div>
-          <div class="recommend_products__slide">
-            <div class="shortcard">
-        <div class="shortcard__thumb">
-          <img src="img/cource_preview.jpg" class="shortcard__thumb-img" alt="" width="220" height="164">
-          <div class="shortcard__tags shortcard__tags--left">
-            <a href="#" class="shortcard__tag">Заработок в интернете</a>
-          </div>
-          <div class="shortcard__tags shortcard__tags--top">
-            <div class="shortcard__tag">Чек-лист</div>
-            <div class="shortcard__tag">Лидер продаж</div>
-          </div>
-          <div class="shortcard__manage">
-            <button class="shortcard__manage-btn shortcard__manage-file" data-title="Формат: EXCEL"><img src="img/excel.svg" alt="" width="15" height="15"></button>
-            <button class="shortcard__manage-btn"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-          </div>
-        </div>
-        <div class="shortcard__body">
-          <div class="shortcard__suptitle">
-            <div class="shortcard__price_block">
-              <div class="shortcard__price shortcard__price--free">Бесплатно</div>
-            </div>
-            <button class="shortcard__manage-btn shortcard__cart-btn"><img src="img/cart.svg" alt=""></button>
-          </div>
-          <div class="shortcard__title">20 примеров успешных рекламных компаний. 20 примеров успешны</div>
-          <div class="shortcard__author">Авторы: <a href="#">Serhii Zashkaruk</a></div>
-          <div class="shortcard__rating">
-            <div class="shortcard__rating-val">4,7</div>
-            <div class="shortcard__rating-stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-            <div class="shortcard__rating-cnt">459</div>
-          </div>
-
-        </div>
-        <a href="#" class="shortcard__link" title="Чакра-йога. 7 способов активизации внутренних ресурсов"></a>
-      </div>
-          </div>
-        </div>
-      </div>
-      <button class="recommend_products__slider-prev" aria-label="назад"></button>
-      <button class="recommend_products__slider-next" aria-label="вперед"></button>
-      <div class="recommend_products__slider-dots"></div>
-    </div>
-  </div>
-</section>
 <footer class="footer">
   <div class="container">
     <div class="row">
@@ -3122,8 +2427,8 @@
 		</div>
 	</div>
 </div>
-
 <script src="https://use.fontawesome.com/a097a3cd8c.js"></script>
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/dragscroll.js"></script>
